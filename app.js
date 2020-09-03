@@ -1,23 +1,23 @@
 const pieces = [
   {
-    title: "Can I Cook Korean?",
-    description: "thoughts on multiculturalism, against a nice traybake with entirely too much chili crisp",
-    image: "traybake.png",
-    link: "https://docs.google.com/document/d/1atY2uG7t5_oyEBCoJE4rjlNCp6U1_NBuJaLgyBv35Os/edit",
-    category: "essay"
-  },
-  {
-    title: "Yellowroot",
-    description: "a look at this bold, gold herbal of the Blue Ridge Mountains, with full particulars",
-    image: "yellowroot.png",
-    link: "https://drive.google.com/drive/folders/1quBLCUaprJ6KqJJ7jUgCoanYN7IlGlFs",
+    title: "Twilight of the Imperial Chef",
+    description: "For decades, the notion of the lone genius in the kitchen has fostered culinary creativity — and restaurants marred by abuse and unfairness. This may be the time for change.",
+    image: "imperialchef.jpg",
+    link: "https://www.nytimes.com/2020/08/04/dining/chef-restaurant-culture.html",
     category: "nonfiction"
   },
   {
-    title: "Ode to a hasty bake",
-    description: "my relationship to my mother in shades of cinnamon, in three acts",
-    image: "cookie.png",
-    link: "https://www.bonappetit.com/recipe/tahini-cookies-2",
+    title: "In a Prius on the Edge of Sanity",
+    description: "Sometimes it takes a ridiculous, hedonistic, emotionally fraught road trip across 19 states to figure out where you really are.",
+    image: "roadtrip.jpg",
+    link: "https://www.bonappetit.com/story/prius-road-trip",
+    category: "essay"
+  },
+  {
+    title: "September Tomatoes ",
+    description: "an obituary for the end of summer",
+    image: "tomato.jpg",
+    link: "https://www.poetryfoundation.org/poems/56583/september-tomatoes",
     category: "poetry"
   }
 ]
@@ -100,7 +100,15 @@ var pieces2 = $(".piece");
     };
   });
 
+  var ex = $("#ex");
+
+  pieces2.add(ex).on('click', function() {
+    $("#piece").toggleClass("show");
+  });
+
+
 });
+
 
 var x = window.matchMedia("(max-device-width: 600px)")
 myFunction(x)

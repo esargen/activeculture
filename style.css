@@ -98,6 +98,7 @@ p {
       font-size: 16pt;
       text-align: center;
       width: 100%;
+      height: 3em;
       color: #48315b;
       font-weight: 100; }
     #words #wordcontainer .piece .imgcontainer {
@@ -107,15 +108,74 @@ p {
       height: 150px;
       background-color: rgba(255, 194, 219, 0.4); }
       #words #wordcontainer .piece .imgcontainer img {
-        height: 300px;
-        margin-left: -100px;
-        margin-top: -100px; }
+        height: 200px;
+        margin-left: -25px;
+        margin-top: -25px; }
     #words #wordcontainer .piece p {
       font-size: 10pt;
       color: #48315b;
       max-width: 90%;
       margin: auto;
       margin-top: 10%; }
+
+#pitch {
+  text-align: center;
+  margin: auto; }
+  #pitch h2 {
+    color: #48315b; }
+  #pitch a #pitchbutton {
+    font-weight: 900;
+    background-color: #ba97d1;
+    border-radius: 30px;
+    padding: 10px 15px;
+    width: 30%;
+    margin: auto; }
+    #pitch a #pitchbutton h1 {
+      color: #eff0f9;
+      text-transform: none !important; }
+
+#piece {
+  width: 100%;
+  max-width: 0%;
+  max-height: 0%;
+  pointer-events: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10; }
+  #piece > div {
+    border-radius: 30px;
+    background-color: #eff0f9;
+    box-shadow: 2px 2px 15px rgba(20, 13, 25, 0.4);
+    width: 80%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    margin: auto; }
+    #piece > div #ex {
+      cursor: pointer;
+      float: right;
+      margin-right: 10px;
+      margin-top: 10px;
+      position: relative;
+      color: #48315b; }
+    #piece > div .title {
+      max-width: 60%;
+      margin: auto; }
+      #piece > div .title h1 {
+        text-align: right; }
+      #piece > div .title .author {
+        text-align: right;
+        font-weight: 100; }
+    #piece > div .body {
+      max-width: 60%;
+      margin: auto; }
+      #piece > div .body p {
+        text-align: justify;
+        margin: auto; }
+
+.show {
+  pointer-events: auto !important;
+  max-width: 100% !important;
+  max-height: 100vh !important; }
 
 @keyframes logo {
   0% {
