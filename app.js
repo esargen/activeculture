@@ -2,14 +2,14 @@ const pieces = [
   {
     title: "Twilight of the Imperial Chef",
     description: "For decades, the notion of the lone genius in the kitchen has fostered culinary creativity — and restaurants marred by abuse and unfairness. This may be the time for change.",
-    image: "imperialchef.jpg",
+    image: "imperialchef.JPG",
     link: "https://www.nytimes.com/2020/08/04/dining/chef-restaurant-culture.html",
     category: "nonfiction"
   },
   {
     title: "In a Prius on the Edge of Sanity",
     description: "Sometimes it takes a ridiculous, hedonistic, emotionally fraught road trip across 19 states to figure out where you really are.",
-    image: "roadtrip.jpg",
+    image: "roadtrip.JPG",
     link: "https://www.bonappetit.com/story/prius-road-trip",
     category: "essay"
   },
