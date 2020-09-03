@@ -1,0 +1,184 @@
+body {
+  font-family: 'roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eff0f9; }
+
+#header {
+  height: 75px; }
+  #header .menu {
+    display: none; }
+  #header #logocontainer {
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 100%;
+    width: 75px;
+    transition: .5s ease; }
+    #header #logocontainer a {
+      height: 20vh;
+      position: absolute; }
+      #header #logocontainer a img {
+        height: 100%;
+        animation: logo 1.5s;
+        animation-iteration-count: infinite; }
+    #header #logocontainer:hover {
+      transition: .5s ease; }
+
+#sidenav {
+  position: fixed;
+  height: 0vh;
+  overflow: hidden;
+  transition: 1s ease;
+  margin-top: 75px;
+  margin-left: 2%;
+  max-width: 20%; }
+  #sidenav p {
+    font-weight: 900; }
+
+p {
+  color: #48315b; }
+
+.fullheight {
+  height: 50vh !important; }
+
+.notfullwidth {
+  opacity: 0%;
+  transition: .25s ease;
+  pointer-events: none; }
+
+.none {
+  display: none; }
+
+.fullwidth {
+  opacity: 100%;
+  transition: .25s ease;
+  pointer-events: auto;
+  display: block; }
+
+.content {
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 10%;
+  margin-top: 75px;
+  width: 65%;
+  text-align: justify; }
+  .content .catnav {
+    display: flex;
+    flex-wrap: wrap; }
+    .content .catnav p {
+      margin-left: 10px;
+      font-size: 10pt;
+      font-weight: 500;
+      color: #ba97d1;
+      align-self: baseline;
+      cursor: pointer; }
+    .content .catnav .title {
+      font-weight: 900;
+      font-size: 12pt;
+      color: #48315b;
+      margin-right: 20px; }
+  .content > div {
+    max-height: 100vh; }
+    .content > div p .special {
+      font-family: 'oswald', sans-serif;
+      color: #ba97d1;
+      font-size: 14pt; }
+
+#words #wordcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  #words #wordcontainer .piece {
+    flex: 25%;
+    max-width: 25%;
+    margin-left: 5%;
+    overflow: hidden; }
+    #words #wordcontainer .piece h3 {
+      font-family: 'oswald', sans-serif;
+      font-size: 16pt;
+      text-align: center;
+      width: 100%;
+      color: #48315b;
+      font-weight: 100; }
+    #words #wordcontainer .piece .imgcontainer {
+      margin: auto;
+      width: 85%;
+      overflow: hidden;
+      height: 150px;
+      background-color: rgba(255, 194, 219, 0.4); }
+      #words #wordcontainer .piece .imgcontainer img {
+        height: 300px;
+        margin-left: -100px;
+        margin-top: -100px; }
+    #words #wordcontainer .piece p {
+      font-size: 10pt;
+      color: #48315b;
+      max-width: 90%;
+      margin: auto;
+      margin-top: 10%; }
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg); }
+  49% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-45deg); }
+  100% {
+    transform: rotate(-45deg); } }
+@media (max-device-width: 600px) {
+  #header {
+    height: 200px;
+    position: fixed;
+    margin-top: 5%;
+    margin-left: 5%; }
+    #header #logocontainer {
+      height: 100%; }
+      #header #logocontainer a {
+        height: 100%; }
+        #header #logocontainer a img {
+          animation-iteration-count: 3; }
+
+  #sidenav {
+    height: 0vh;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 300px;
+    margin-left: 0;
+    z-index: 2;
+    background-color: rgba(239, 240, 249, 0.94);
+    padding: 15px;
+    overflow: hidden; }
+    #sidenav > div {
+      margin-left: 20%; }
+      #sidenav > div .navbutton {
+        font-size: 36pt; }
+
+  .content {
+    margin-left: 3%;
+    margin-top: 20vh;
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    font-size: 28pt; }
+    .content .catnav {
+      width: 85%;
+      margin: auto;
+      justify-content: space-around; }
+      .content .catnav .title {
+        font-size: 32pt; }
+      .content .catnav p {
+        font-size: 24pt; }
+
+  #about p {
+    max-width: 65%;
+    margin-left: 20%; }
+  #about span {
+    font-size: 32pt; }
+
+  #words #wordcontainer .piece h3 {
+    font-size: 28pt; }
+  #words #wordcontainer .piece p {
+    font-size: 21pt; } }
+
+/*# sourceMappingURL=style.css.map */
